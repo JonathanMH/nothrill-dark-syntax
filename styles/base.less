@@ -27,7 +27,7 @@ atom-text-editor, :host {
       }
 
       &.cursor-line-no-selection {
-        color: @syntax-gutter-text-color-selected;
+        color: @syntax-text-color;
       }
     }
   }
@@ -43,7 +43,7 @@ atom-text-editor, :host {
   }
 
   .cursor {
-    color: @syntax-selection-color;
+    color: @syntax-cursor-color;
   }
 
   .selection .region {
@@ -159,7 +159,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
     &.heading,
     &.identity {
-      color: @blue;
+      color: @syntax-text-color;
     }
 
     &.bold {
@@ -174,7 +174,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.section.embedded {
-    color: darken(@red, 10%);
+    color: @syntax-text-color;
   }
 
 }
@@ -282,7 +282,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.list {
-    color: @red;
+    color: @syntax-text-color;
   }
 
   &.quote {
