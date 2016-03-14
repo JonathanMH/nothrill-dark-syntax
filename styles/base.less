@@ -311,3 +311,18 @@ atom-text-editor[mini] .scroll-view,
     background: @syntax-cursor-color;
   }
 }
+
+// matching brackets are shown with inverted selection colours
+// actually for now, this isn't working properly, because of the cursor half transparencyness
+.editor, atom-text-editor::shadow {
+  .bracket-matcher {
+    border-bottom: none;
+    position: absolute;
+    background-color: @syntax-cursor-color;
+    color: @syntax-text-color;
+
+    & .cursor {
+      opacity: 1;
+    }
+  }
+}
