@@ -43,7 +43,7 @@ atom-text-editor, :host {
   }
 
   .cursor {
-    color: @syntax-cursor-color;
+    color: @syntax-text-color;
   }
 
   .selection .region {
@@ -132,7 +132,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 
   &.regexp {
-    color: @cyan;
+    color: @syntax-text-color;
 
     .source.ruby.embedded {
       color: @syntax-text-color;
@@ -308,7 +308,7 @@ atom-text-editor[mini] .scroll-view,
 
 .vim-mode {
   .cursor, .cursor.blink-off {
-    background: @syntax-cursor-color;
+    background: @black;
   }
 }
 
@@ -318,7 +318,7 @@ atom-text-editor[mini] .scroll-view,
   .bracket-matcher {
     border-bottom: none;
     position: absolute;
-    background-color: @syntax-cursor-color;
+    background-color: @black;
     color: @syntax-text-color;
 
     & .cursor {
